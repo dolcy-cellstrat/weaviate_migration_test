@@ -7,7 +7,7 @@ capacity:
 storage: 10Gi
 volumeMode: Filesystem
 accessModes:
-  - ReadWriteMany
+- ReadWriteMany
 persistentVolumeReclaimPolicy: Retain
 storageClassName: local-storage
 local:
@@ -15,8 +15,8 @@ path: /home/vagrant/storage
 nodeAffinity:
 required:
 nodeSelectorTerms:
-  - matchExpressions:
-  - key: kubernetes.io/hostname
+- matchExpressions:
+- key: kubernetes.io/hostname
 operator: In
 values:
-  - node1
+- node1
