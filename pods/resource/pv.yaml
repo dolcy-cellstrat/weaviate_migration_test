@@ -4,14 +4,14 @@ metadata:
 name: test-pv
 spec:
 capacity:
-  storage: 10Gi
+storage: 10Gi
 volumeMode: Filesystem
 accessModes:
   - ReadWriteMany
 persistentVolumeReclaimPolicy: Retain
 storageClassName: local-storage
 local:
-  path: /home/vagrant/storage
+path: /home/vagrant/storage
 nodeAffinity:
 required:
 nodeSelectorTerms:
