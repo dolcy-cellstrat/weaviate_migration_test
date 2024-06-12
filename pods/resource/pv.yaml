@@ -13,10 +13,10 @@ storageClassName: local-storage
 local:
   path: /home/vagrant/storage
 nodeAffinity:
-  required:
-    nodeSelectorTerms:
-      - matchExpressions:
-          - key: kubernetes.io/hostname
-            operator: In
-            values:
-              - node1
+required:
+nodeSelectorTerms:
+  - matchExpressions:
+  - key: kubernetes.io/hostname
+operator: In
+values:
+  - node1
